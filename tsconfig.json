@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["es2017","esnext.asynciterable"],
+    "typeRoots": ["./node_modules/@types","esnext.asynciterable"],
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    // "isolatedModules": true,
+
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    // "noUnusedParameters": true,
+    // "noUnusedLocals": true,
+
+    
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true,
+    "allowJs": true,
+    "noEmit": false,
+  },
+  "include": ["./src/**/*", ".env"],
+  "exclude": ["./node_modules"],
+  "extends": "@tsconfig/node16/tsconfig.json"
+}
